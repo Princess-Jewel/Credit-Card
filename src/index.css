@@ -1,13 +1,67 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --type-scale: 0.8;
+  --height-scale: 0.9;
+  --primaryColor: rgb(63, 103, 233);
+  --primaryLightColor: #6663c0;
+  --secondaryColor: rgb(205, 88, 85);
+  --mainBlack: #1b1b1b;
+  --mainWhite: #fff;
+  --mainGrey: rgb(198, 201, 208);
+  --mainBackground: #f1f5f8;
+  --transition: all 0.3s ease-out;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid var(--primaryColor);
+  outline: none;
+  padding: 1rem 1.5rem;
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--mainWhite, white);
+  background-color: var(--primaryColor, blue);
+}
+
+.btn:hover {
+  background-color: var(--primaryLightColor);
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    --type-scale: 0.9;
+  }
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --type-scale: 1;
+    --height-scale: 1;
+  }
 }

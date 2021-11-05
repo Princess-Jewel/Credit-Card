@@ -1,0 +1,33 @@
+.rccs {
+  margin: 0;
+  width: 100%;
+  height: 15rem;
+}
+
+.rccs__card {
+  width: 100%;
+  height: 15rem;
+}
+
+section .rccs__card--unknown > div {
+  background: linear-gradient(
+                              25deg, 
+                              var(--secondaryColor), 
+                              var(--primaryLightColor));
+  width: 100%;
+}
+
+.rccs__card--front {
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .rccs {
+    width: 80%;
+    height: 18rem;
+  }
+
+  .rccs__card {
+    height: 18rem;
+  }
+}

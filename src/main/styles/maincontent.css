@@ -1,0 +1,33 @@
+.main {
+  margin-top: 4rem;
+}
+
+.main-content {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.transaction-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 2rem 0 0;
+  border-top: 1px solid var(--mainGrey);
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content {
+    max-width: 92%;
+  }
+
+  .transaction-detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .main-content {
+    max-width: 1380px;
+  }
+}

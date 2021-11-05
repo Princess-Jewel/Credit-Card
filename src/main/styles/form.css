@@ -1,0 +1,48 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.625rem;
+}
+
+.form-group input[type=text] {
+  padding: 1rem;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(223, 221, 221);
+  outline: none;
+}
+
+.form-group input[type=text]:focus {
+  border-color: var(--secondaryColor);
+}
+
+form > .form-group {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.form-group input[type=radio] {
+  width: 1rem;
+  height: 1rem;
+}
+
+form > .form-group label {
+  margin-left: 0.625rem;
+  margin-bottom: 0;
+}
+
+.payment-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem 1rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+}

@@ -1,0 +1,32 @@
+.payment-content {
+  margin-top: 2rem;
+  padding: 1rem 0 2rem;
+  border-bottom: 1px solid var(--mainGrey);
+  border-top: 1px solid var(--mainGrey);
+}
+
+.payment-content p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.payment-content p .promo {
+  color: var(--mainGrey);
+}
+
+.pay-btn-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay-btn-wrapper p {
+  font-size: calc(1.25rem * var(--type-scale));
+  line-height: calc(1.6875rem * var(--height-scale));
+  font-weight: 700;
+  text-transform: uppercase;
+}
